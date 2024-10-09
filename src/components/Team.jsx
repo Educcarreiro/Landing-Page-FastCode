@@ -2,31 +2,36 @@ import React from "react";
 
 export const Team = (props) => {
   return (
-    <div id="team" className="text-center">
+    <div id="team">
       <div className="container">
-        <div className="col-md-8 col-md-offset-2 section-title">
-          <h2>Nosso Time</h2>
-          <p>
-          Conheça a equipe de desenvolvedores da Fast Code!
-          </p>
-        </div>
-        <div id="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 team">
-                  <div className="thumbnail">
-                    {" "}
-                    <img src={d.img} alt="..." className="team-img" />
-                    <div className="caption">
-                      <h4>{d.name}</h4>
-                      <p>{d.job}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            : "loading"}
+        <div className="row">
+          <div className="col-xs-12 col-md-6">
+            {" "}
+            <img src="img/team/dudateste.jpg" className="img-responsive" alt="" />{" "}
+          </div>
+          <div className="col-xs-12 col-md-6">
+            <div className="team-text">
+              <h2>Desenvolvedor</h2>
+              <p>
+                {/* Texto da biografia */}
+                Tenho experiência sólida em inteligência artificial e ciência de dados, 
+                com foco em modelos de linguagem de larga escala (LLMs), como o LLaMA, 
+                atuando em finetuning e otimização de performance. Também domino o 
+                pré-processamento de texto, sumarização e engenharia de prompts para 
+                melhorar a qualidade dos resultados. No desenvolvimento web, sou 
+                especializada em Next.js, React e Angular, criando interfaces modernas 
+                e responsivas, com foco em performance e escalabilidade, entregando uma 
+                experiência de usuário eficiente.
+              </p>
+              {/* Subtítulo realocado */}
+              <h3>Maria Eduarda Pinheiro Carreiro</h3>
+              <p>Desenvolvedor Full-Stack</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
+export default Team;

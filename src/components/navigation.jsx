@@ -41,7 +41,7 @@ export const Navigation = () => {
             </li>
             <li>
               <a href="#team" className="page-scroll">
-                Time
+                Dev
               </a>
             </li>
             <li>

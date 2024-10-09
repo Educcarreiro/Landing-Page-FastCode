@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "Fast Code Br",
-    "paragraph": "entregamos soluções rápidas, personalizáveis e escaláveis, focadas em criar uma presença online eficiente e de alta qualidade para empresas e empreendedores, sem esperar longos prazos de desenvolvimento"
+    "title": "",
+    "paragraph": ""
   },
   "About": {
-    "paragraph": "Tenho experiência sólida em inteligência artificial e ciência de dados, com foco em modelos de linguagem de larga escala (LLMs), como o LLaMA, atuando em finetuning e otimização de performance. Também domino o pré-processamento de texto, sumarização e engenharia de prompts para melhorar a qualidade dos resultados. No desenvolvimento web, sou especializada em Next.js, React e Angular, criando interfaces modernas e responsivas, com foco em performance e escalabilidade, entregando uma experiência de usuário eficiente.",
+    "paragraph": "A Fast Code foi criada para oferecer soluções web rápidas, escaláveis e personalizáveis a quem busca uma presença online eficiente e ágil. Nossa missão é entregar com agilidade, sem comprometer a qualidade. Com foco na escalabilidade, nossas soluções são projetadas para crescer com os negócios, facilitando a adaptação e expansão. Destacamo-nos pela entrega rápida e manutenção contínua, garantindo que as plataformas evoluam junto com o mercado.",
     "Why": [
       "React",
       "Hooks",
@@ -13,7 +13,7 @@
     ],
     "Why2": [
       "Git",
-      "Sklearn",
+      "Angular",
       "NLP",
       "Prompt Engineering"
     ]
@@ -55,31 +55,16 @@
   
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/team/foto-duda.jpg",
+      "name": "Maria Eduarda Pinheiro Carreiro",
+      "job": "Fundador &  Dev Full-Stack"
     }
   ],
   "Contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+1 123 456 1234",
     "email": "fastcodebr@gmail.com",
-    "facebook": "fb.com",
+    "Instagram":"fastcodebr",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
