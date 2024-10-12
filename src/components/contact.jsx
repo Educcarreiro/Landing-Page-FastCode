@@ -7,6 +7,7 @@ const initialState = {
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
@@ -14,22 +15,30 @@ export const Contact = (props) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
   const clearState = () => setState({ ...initialState });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    // Substitua pelos seus dados do EmailJS
+
+    // Debug: Verifica os dados capturados no formulário
+    console.log("Form Data:", { name, email, message });
+
+    // Substitua pelos seus dados corretos do EmailJS
     emailjs
-      .sendForm("service_lgtzhr8", "template_upje3db", e.target, "1NW0UJr59dm84Qm05")
+      .sendForm(
+        "service_lgtzhr8",  // Verifique se o ID do serviço está correto
+        "template_upje3db", // Verifique o ID do template
+        e.target,           // Envia os dados do formulário
+        "1NW0UJr59dm84Qm05" // Verifique se o seu ID de usuário do EmailJS está correto
+      )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email enviado com sucesso:", result.text);
           clearState();
         },
         (error) => {
-          console.log(error.text);
+          console.log("Erro ao enviar email:", error.text);
         }
       );
   };
@@ -43,7 +52,8 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Fale conosco</h2>
                 <p>
-                  Por favor, preencha o formulário abaixo para nos enviar uma mensagem, e entraremos em contato com você o mais rápido possível.
+                  Por favor, preencha o formulário abaixo para nos enviar uma
+                  mensagem, e entraremos em contato com você o mais rápido possível.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -58,6 +68,7 @@ export const Contact = (props) => {
                         placeholder="Nome"
                         required
                         onChange={handleChange}
+                        value={name} // Vincula o valor ao estado
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -72,6 +83,7 @@ export const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={email} // Vincula o valor ao estado
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -86,6 +98,7 @@ export const Contact = (props) => {
                     placeholder="Mensagem"
                     required
                     onChange={handleChange}
+                    value={message} // Vincula o valor ao estado
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
@@ -105,15 +118,29 @@ export const Contact = (props) => {
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
+              <p>
+                <span>
+                  <i className="fab fa-instagram"></i> Instagram
+                </span>{" "}
+                <a href="https://www.instagram.com/fastcodebr?igsh=OHdmMGxyejM3eGp0" target="_blank" rel="noopener noreferrer">
+                  @fastcodebr
+                </a>
+              </p>
+              <p>
+                <span>
+                  <i className="fab fa-linkedin"></i> LinkedIn
+                </span>{" "}
+                <a href="https://www.linkedin.com/in/eduarda-carreiro-pinheiro/" target="_blank" rel="noopener noreferrer">
+                  Eduarda Carreiro
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; 2024 Maria Eduarda Pinheiro Carreiro Design 
-          </p>
+          <p>&copy; 2024 FastCode Design</p>
         </div>
       </div>
     </div>

@@ -494,8 +494,6 @@ header .intro-text {
   margin: 30px 0;
 }
 
-
-
 /* Centralização do título e subtítulo */
 .team-section-title h2 {
   margin-bottom: 20px;
@@ -524,8 +522,6 @@ header .intro-text {
   justify-content: space-between; /* Ajusta o espaçamento entre a foto e o texto */
   max-width: 1000px; /* Define uma largura máxima */
 }
-
-  
 
 /* Contact Section */
 #contact {
@@ -626,8 +622,16 @@ label {
   margin-bottom: 10px;
   display: block;
 }
+#contact .contact-item a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+#contact .contact-item a:hover {
+  color: #9a65eb;
+}
 #contact .contact-item i.fa {
   margin-right: 10px;
+  color: rgba(255, 255, 255, 1);
 }
 #contact .social {
   border-top: 1px solid rgba(255, 255, 255, 0.15);

@@ -25,7 +25,7 @@ export const Team = (props) => {
               </p>
               {/* Subtítulo realocado */}
               <h3>Maria Eduarda Pinheiro Carreiro</h3>
-              <p>Desenvolvedor Full-Stack</p>
+              <p>Desenvolvedor Full-Stack | Data Scientist Trainee </p>
             </div>
           </div>
         </div>
