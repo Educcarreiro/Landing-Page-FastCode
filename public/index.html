@@ -1,16 +1,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/team/about.jpg" type="img/team/icon_teste" />
-  <link rel="icon" href="path/to/favicon-128x128.png" sizes="256x256">
   
-  <!-- Apple Touch Icon -->
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Fast Code BR - Soluções de software rápidas para landing pages, e-commerce, e sites." />
+  <meta name="author" content="Fast Code BR" />
+  
+  <!-- Open Graph Meta Tags para melhor visualização nas redes sociais -->
+  <meta property="og:title" content="Fast Code BR - Soluções de Software" />
+  <meta property="og:description" content="Oferecemos soluções de software rápidas como landing pages, e-commerce e sites." />
+  <meta property="og:image" content="img/team/about.jpg" />
+  <meta property="og:url" content="https://fastcodebr.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/team/icon_teste.ico" type="image/x-icon" />
+  <link rel="icon" href="img/team/icon_teste.png" sizes="256x256">
+  
+  <!-- Apple Touch Icons -->
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
@@ -23,15 +34,34 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
 
-  <title>Fast Code</title>
-  <meta name="description" content="Description of the Fast Code website" />
-  <meta name="author" content="@Issaafalkattan" />
+  <title>Fast Code BR - Soluções de Software</title>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div id="root"></div>
-  
-  <!-- Scripts -->
-  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- Formulário de contato -->
+  <form id="contact-form" onSubmit="sendEmail(event)">
+    <input type="text" name="from_name" placeholder="Seu Nome" required />
+    <input type="email" name="email" placeholder="Seu Email" required />
+    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Scripts no final da página -->
+  <script type="text/javascript" src="js/jquery.1.11.1.js" defer></script>
+  <script type="text/javascript" src="js/bootstrap.js" defer></script>
+
+  <!-- Script para enviar o formulário via EmailJS -->
+  <script type="text/javascript">
+    function sendEmail(event) {
+      event.preventDefault();  // Evita o comportamento padrão de recarregar a página
+      emailjs.sendForm('service_lgtzhr8', 'template_upje3db', '#contact-form')
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+          console.log('FAILED...', error);
+        });
+    }
+  </script>
 </body>

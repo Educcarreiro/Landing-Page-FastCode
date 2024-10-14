@@ -21,7 +21,7 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Debug: Verifica os dados capturados no formulário
+    // Verifica os dados capturados no formulário
     console.log("Form Data:", { name, email, message });
 
     // Substitua pelos seus dados corretos do EmailJS
