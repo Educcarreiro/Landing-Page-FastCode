@@ -39,10 +39,10 @@ export const Contact = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="name"
+                      name="name" // Atributo name corrigido
                       className="form-control"
                       placeholder="Nome"
-                      required
+                      required // Garante que o campo seja preenchido
                       onChange={handleChange}
                       value={name}
                     />
@@ -52,10 +52,10 @@ export const Contact = () => {
                   <div className="form-group">
                     <input
                       type="email"
-                      name="email"
+                      name="email" // Atributo name corrigido
                       className="form-control"
                       placeholder="Email"
-                      required
+                      required // Garante que o campo seja preenchido
                       onChange={handleChange}
                       value={email}
                     />
@@ -64,11 +64,11 @@ export const Contact = () => {
               </div>
               <div className="form-group">
                 <textarea
-                  name="message"
+                  name="message" // Atributo name corrigido
                   className="form-control"
                   rows="4"
                   placeholder="Mensagem"
-                  required
+                  required // Garante que o campo seja preenchido
                   onChange={handleChange}
                   value={message}
                 ></textarea>
