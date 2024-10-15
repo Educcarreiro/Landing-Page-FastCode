@@ -9,7 +9,7 @@
       "React",
       "Hooks",
       "API",
-      "javascript"
+      "JavaScript"
     ],
     "Why2": [
       "Git",
@@ -18,9 +18,7 @@
       "Prompt Engineering"
     ]
   },
- 
   "Services": [
-   
     {
       "icon": "fa fa-cart-arrow-down",
       "name": "E-commerce",
@@ -34,7 +32,7 @@
     {
       "icon": "fa fa-file-text",
       "name": "Landing Pages",
-      "text": " Criação rápida de landing pages personalizadas para campanhas de Marketing."
+      "text": "Criação rápida de landing pages personalizadas para campanhas de Marketing."
     },
     {
       "icon": "fa fa-wrench",
@@ -44,27 +42,26 @@
     {
       "icon": "fa fa-rocket",
       "name": "Sites Express",
-      "text": " Desenvolvimento de sites em tempo recorde prontos para serem publicados e com integração a ferramentas."
+      "text": "Desenvolvimento de sites em tempo recorde prontos para serem publicados e com integração a ferramentas."
     },
     {
       "icon": "fa fa-pie-chart",
       "name": "Serviços de Integração",
-      "text": " Integração rápida com APIs, CRMs, e sistemas de automação ."
+      "text": "Integração rápida com APIs, CRMs, e sistemas de automação."
     }
   ],
-  
   "Team": [
     {
       "img": "img/team/foto-duda.jpg",
       "name": "Maria Eduarda Pinheiro Carreiro",
-      "job": "Fundador &  Dev Full-Stack"
+      "job": "Fundador & Dev Full-Stack"
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "4321 California St, San Francisco, CA 12345",
     "phone": "+1 123 456 1234",
     "email": "fastcodebr@gmail.com",
-    "Instagram":"fastcodebr",
+    "Instagram": "fastcodebr",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
@@ -72,22 +69,22 @@
     {
       "icon": "fa fa-rocket",
       "title": "Velocidade de Entrega",
-      "text": "Criação e lançamento de soluções em prazos curtos"
+      "text": "Criação e lançamento de soluções em prazos curtos."
     },
     {
       "icon": "fa fa-robot",
       "title": "Automação e Inteligência",
-      "text": " Possibilidade de automação de tarefas utilizando inteligência artificial "
+      "text": "Possibilidade de automação de tarefas utilizando inteligência artificial."
     },
     {
       "icon": "fa fa-money",
       "title": "Preço Acessível",
-      "text": "Planos de serviço com taxas de serviços mensais "
+      "text": "Planos de serviço com taxas de serviços mensais."
     },
     {
       "icon": "fa fa-computer",
       "title": "Tecnologia",
-      "text": "Utilizamos as últimas tendências em desenvolvimento web"
+      "text": "Utilizamos as últimas tendências em desenvolvimento web."
     }
   ]
 }

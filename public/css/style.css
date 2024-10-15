@@ -528,9 +528,11 @@ header .intro-text {
   padding: 100px 0 60px;
   background: linear-gradient(to right, #cdb2f5 0%, #9a65eb 100%);
   color: rgba(255, 255, 255, 0.75);
+  position: relative;
 }
 #contact .section-title {
   margin-bottom: 40px;
+  position: relative;
 }
 #contact .section-title p {
   font-size: 16px;
@@ -540,6 +542,7 @@ header .intro-text {
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  position: relative;
 }
 #contact .section-title h2::after {
   position: absolute;
@@ -548,7 +551,8 @@ header .intro-text {
   height: 4px;
   width: 60px;
   bottom: 0;
-  left: 30px;
+  margin-left: -30px;
+  left: 50%;
 }
 #contact h3 {
   color: #fff;

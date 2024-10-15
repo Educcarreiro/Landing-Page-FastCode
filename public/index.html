@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +18,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/team/icon_teste.ico" type="image/x-icon" />
   <link rel="icon" href="img/team/icon_teste.png" sizes="256x256">
-  
+
   <!-- Apple Touch Icons -->
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
@@ -38,30 +40,143 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <div id="root"></div>
+  <div id="root">
+    
+    <!-- Seção Sobre -->
+    <section id="about" class="container">
+      <div class="section-title">
+        <h2>Sobre a Fast Code</h2>
+        <p>A Fast Code foi criada para oferecer soluções web rápidas, escaláveis e personalizáveis a quem busca uma presença online eficiente e ágil. Nossa missão é entregar com agilidade, sem comprometer a qualidade. Com foco na escalabilidade, nossas soluções são projetadas para crescer com os negócios, facilitando a adaptação e expansão. Destacamo-nos pela entrega rápida e manutenção contínua, garantindo que as plataformas evoluam junto com o mercado.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Tecnologias que usamos</h3>
+          <ul>
+            <li>React</li>
+            <li>Hooks</li>
+            <li>API</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Outras habilidades</h3>
+          <ul>
+            <li>Git</li>
+            <li>Angular</li>
+            <li>NLP</li>
+            <li>Prompt Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- Formulário de contato -->
-  <form id="contact-form" onSubmit="sendEmail(event)">
-    <input type="text" name="from_name" placeholder="Seu Nome" required />
-    <input type="email" name="email" placeholder="Seu Email" required />
-    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+    <!-- Seção de Serviços -->
+    <section id="services" class="container">
+      <div class="section-title">
+        <h2>Serviços Oferecidos</h2>
+        <p>Projetos personalizados feitos com rapidez</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fa fa-cart-arrow-down"></i>
+          <h3>E-commerce</h3>
+          <p>Implementação de lojas virtuais com integrações a sistemas de pagamento.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-cogs"></i>
+          <h3>Portais Customizáveis</h3>
+          <p>Para empresas maiores que precisam de portais personalizados.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-file-text"></i>
+          <h3>Landing Pages</h3>
+          <p>Criação rápida de landing pages personalizadas para campanhas de Marketing.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-wrench"></i>
+          <h3>Suporte e Manutenção Rápida</h3>
+          <p>Suporte técnico e ajustes pós-lançamento com foco em agilidade.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-rocket"></i>
+          <h3>Sites Express</h3>
+          <p>Desenvolvimento de sites em tempo recorde prontos para serem publicados e com integração a ferramentas.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-pie-chart"></i>
+          <h3>Serviços de Integração</h3>
+          <p>Integração rápida com APIs, CRMs, e sistemas de automação.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Equipe -->
+    <section id="team" class="container">
+      <div class="section-title">
+        <h2>Nossa Equipe</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="img/team/foto-duda.jpg" alt="Maria Eduarda Pinheiro Carreiro" class="img-responsive">
+            <div class="team-details">
+              <h4>Maria Eduarda Pinheiro Carreiro</h4>
+              <p>Fundador & Dev Full-Stack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="container">
+      <div class="section-title">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato conosco pelos seguintes canais. Estamos disponíveis para ajudá-lo da melhor forma possível.</p>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="contact-item">
+            <i class="fa fa-envelope-o fa-3x"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:fastcodebr@gmail.com">fastcodebr@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item">
+            <i class="fab fa-instagram fa-3x"></i>
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/fastcodebr" target="_blank">@fastcodebr</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item">
+            <i class="fab fa-whatsapp fa-3x"></i>
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/5581999999999" target="_blank">(81) 99999-9999</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item">
+            <i class="fab fa-linkedin fa-3x"></i>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/eduarda-carreiro-pinheiro/" target="_blank">Eduarda Carreiro</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <div id="footer" style="background-color: #f4f4f4; padding: 20px 0;">
+      <div class="container text-center">
+        <p>&copy; 2024 FastCode Design</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts no final da página -->
   <script type="text/javascript" src="js/jquery.1.11.1.js" defer></script>
   <script type="text/javascript" src="js/bootstrap.js" defer></script>
 
-  <!-- Script para enviar o formulário via EmailJS -->
-  <script type="text/javascript">
-    function sendEmail(event) {
-      event.preventDefault();  // Evita o comportamento padrão de recarregar a página
-      emailjs.sendForm('service_lgtzhr8', 'template_upje3db', '#contact-form')
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-          console.log('FAILED...', error);
-        });
-    }
-  </script>
 </body>
+</html>
