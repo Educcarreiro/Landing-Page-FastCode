@@ -58,7 +58,7 @@ export const Contact = () => {
               <h3>WhatsApp</h3>
               <p>
                 <a href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer" className="contact-link">
-                  (81) 99999-9999
+                  Em breve 
                 </a>
               </p>
             </div>
